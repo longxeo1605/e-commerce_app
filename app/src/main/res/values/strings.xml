@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="ChoXacNhanfragment">Khong co don hang nao</string>
-    <string name="DangGiaofragment">Khong co don hang nao</string>
-    <string name="DaGiaofragment">Khong co don hang nao</string>
-    <string name="DaHuyfragment">Khong co don hang nao</string>
+    <string name="ChoXacNhanfragment">Không có đơn hàng nào</string>
+    <string name="DangGiaofragment">Không có đơn hàng nào</string>
+    <string name="DaGiaofragment">Không có đơn hàng nào</string>
+    <string name="DaHuyfragment">Không có đơn hàng nào</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

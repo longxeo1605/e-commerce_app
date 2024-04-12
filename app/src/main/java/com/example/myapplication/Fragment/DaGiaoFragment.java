@@ -1,19 +1,20 @@
-package com.example.myapplication;
+package com.example.myapplication.Fragment;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
+import com.example.myapplication.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ChoXacNhanFragment#newInstance} factory method to
+ * Use the {@link DaGiaoFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ChoXacNhanFragment extends Fragment {
+public class DaGiaoFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +25,7 @@ public class ChoXacNhanFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ChoXacNhanFragment() {
+    public DaGiaoFragment() {
         // Required empty public constructor
     }
 
@@ -37,8 +38,8 @@ public class ChoXacNhanFragment extends Fragment {
      * @return A new instance of fragment ChoXacNhanFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ChoXacNhanFragment newInstance(String param1, String param2) {
-        ChoXacNhanFragment fragment = new ChoXacNhanFragment();
+    public static DaGiaoFragment newInstance(String param1, String param2) {
+        DaGiaoFragment fragment = new DaGiaoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +60,6 @@ public class ChoXacNhanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cho_xac_nhan, container, false);
+        return inflater.inflate(R.layout.fragment_da_giao, container, false);
     }
 }

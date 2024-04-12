@@ -5,13 +5,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context=".Activity.MainActivity">
 
     <include
         android:id="@+id/include"
-        layout="@layout/toolbar"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-1dp" />
+        layout="@layout/toolbar"/>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
@@ -27,26 +26,36 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cho Xac Nhan" />
+            android:text="Chờ Xác Nhận" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dang Giao" />
+            android:text="Đang Giao" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Da Giao" />
+            android:text="Đã Giao" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Da Huy" />
+            android:text="Đã Hủy" />
 
     </com.google.android.material.tabs.TabLayout>
 
-<!--    <androidx.viewpager2.widget.ViewPager2-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="409dp"
+        android:layout_height="601dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+
+    <!--    <androidx.viewpager2.widget.ViewPager2-->
 <!--        android:id="@+id/vp2"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
