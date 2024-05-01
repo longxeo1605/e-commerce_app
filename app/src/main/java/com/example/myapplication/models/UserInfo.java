@@ -2,32 +2,34 @@ package com.example.myapplication.models;
 
 import java.util.List;
 
-public class User_info {
+public class UserInfo {
 
-    private String uId, displayName, createDate, phone, email, avatarLink;
+    private String uid, displayName, createDate, cccd, phone, email, avatarLink, roleId;
     private List<String>CCCDImg;
     private boolean status;
 
-    public User_info() {
+    public UserInfo() {
     }
 
-    public User_info(String uId, String displayName, String createDate, String phone, String email, String avatarLink, List<String> CCCDImg, boolean status) {
-        this.uId = uId;
+    public UserInfo(String uid, String displayName, String createDate, String cccd, String phone, String email, String avatarLink, String roleId, List<String> CCCDImg, boolean status) {
+        this.uid = uid;
         this.displayName = displayName;
         this.createDate = createDate;
+        this.cccd = cccd;
         this.phone = phone;
         this.email = email;
         this.avatarLink = avatarLink;
+        this.roleId = roleId;
         this.CCCDImg = CCCDImg;
         this.status = status;
     }
 
-    public String getuId() {
-        return uId;
+    public String getUid() {
+        return uid;
     }
 
-    public void setuId(String uId) {
-        this.uId = uId;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public String getDisplayName() {
@@ -44,6 +46,14 @@ public class User_info {
 
     public void setCreateDate(String createDate) {
         this.createDate = createDate;
+    }
+
+    public String getCccd() {
+        return cccd;
+    }
+
+    public void setCccd(String cccd) {
+        this.cccd = cccd;
     }
 
     public String getPhone() {
@@ -68,6 +78,14 @@ public class User_info {
 
     public void setAvatarLink(String avatarLink) {
         this.avatarLink = avatarLink;
+    }
+
+    public String getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
     }
 
     public List<String> getCCCDImg() {

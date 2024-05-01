@@ -3,18 +3,18 @@ package com.example.myapplication.models;
 import java.util.List;
 
 public class Product {
-    private String categoryName, desc, price, productId, productName, uId;
+    private String categoryName, desc, price, productId, productName, uid;
 
 
-    public String getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(String quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
-    private String quantity;
+    private int quantity;
     private List<String>listImageUrl;
 
     public Product(){
@@ -26,7 +26,7 @@ public class Product {
         this.price = price;
         this.productId = productId;
         this.productName = productName;
-        this.uId = uId;
+        this.uid = uId;
         this.listImageUrl = listImageUrl;
     }
 
@@ -71,11 +71,11 @@ public class Product {
     }
 
     public String getuId() {
-        return uId;
+        return uid;
     }
 
     public void setuId(String uId) {
-        this.uId = uId;
+        this.uid = uId;
     }
 
     public List<String> getListImageUrl() {
